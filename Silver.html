@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NotBadWePad</title>
+    <link rel="icon" href="icon/ico.ico" type="images/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="autor" content="Zhenya Vovchyk">
+    <meta name="keywords" content="Create web-page, WebPageNote, WEBnote, Note for web, Fast note, WEBpad, WEB page test note, speed test html code, Test HTML5 CSS code online, HTML,CSS, Bootstrap, Web development, programming,training,learning,quiz,primer, references,examples,source code,colors">
+    <script>
+        window.name = "source"
+
+        function launchEditor() {
+            editor = window.open("1.htm", "editor", "height=310,width=350")
+        }
+
+        function viewPage() {
+            view = window.open("", "view")
+            view.document.open()
+            view.document.write(document.forms[0].elements[0].value)
+            view.document.close()
+        }
+    </script>
+    <style>
+        html, body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Comic Sans MS", cursive, sans-serif;
+        }
+
+        body {
+            background-image: url(img/White.jpg);
+            background-size: cover;
+        }
+
+        #textarea {
+            background: url(#);
+            color: silver;
+            font-size: 26px;
+            padding: 1%;
+            border-image: url(img/White.jpg);
+        }
+
+        .w3-bar {
+            font-size: 25px;
+            color: #494949;
+            background: url(#);
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="w3-bar">
+            <button class="w3-button " onClick="viewPage()">Create</button>
+            <button class="w3-button w3-bar-item w3-button w3-right"><a href="Silver.html">Reset</a></button>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">Theme</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="index.html" class="w3-bar-item w3-button">November</a>
+                    <a href="Grey.html" class="w3-bar-item w3-button">Grey</a>
+                    <a href="SpaceTravel.html" class="w3-bar-item w3-button">Space travel</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">Fonts-color</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="Red.html" class="w3-bar-item w3-button">Red</a>
+                    <a href="Blue.html" class="w3-bar-item w3-button">Blue</a>
+                    <a href="Green.html" class="w3-bar-item w3-button">Green</a>
+                    <a href="Orange.html" class="w3-bar-item w3-button">Orange</a>
+                    <a href="White.html" class="w3-bar-item w3-button">Black</a>
+                    <a href="Gold.html" class="w3-bar-item w3-button">Gold</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <form>
+            <textarea id="textarea" cols=100 " rows="20 ">
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <title>Your Web page name</title>
+                    <style>
+                        html, body, h1, h2, h3, h4, h5, h6 {
+                            font-family: "Comic Sans MS ", cursive, sans-serif;
+                            font-size: 20px;
+                        }
+                    </style>
+                </head>
+
+                <body>
+                    <center><h1>Use your imagenation</h1></center>
+                    <center><h3>Create and test your web page...</h3></center>
+                </body>
+            </html>
+        </textarea>
+    </form>
+</center>
+</body>
+</html>           
